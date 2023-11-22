@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <div class="top-container flex-col justify-center item-center">
+            <h1>To do</h1>
+            <div class="addTask-input flex justify-around item-center">
+                <i class="fa-solid fa-circle-plus"></i>
+                <input type="text" placeholder="Add a task">
+            </div>
+        </div>   
+    </header>
+    <section class="todolistContainer flex justify-center item-center">
+        <div class="list-container">
+            <ul class="task-list">
+            </ul>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

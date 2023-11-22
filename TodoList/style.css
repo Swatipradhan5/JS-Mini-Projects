@@ -1,0 +1,96 @@
+@import url('utility.css');
+:root{
+    --white:#ffffff;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.top-container{
+    background: linear-gradient(to right, rgb(101, 78, 163), rgb(234, 175, 200));
+    height: 40vh;
+    width: 100vw;
+}
+h1{
+    text-transform:uppercase;
+    color:var(--white);
+    font-weight: 600;
+    margin: 1rem 0 2rem 0;
+}
+
+.addTask-input{
+    background-color: var(--white);
+    height: 3rem;
+    width: 30vw;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px 0 gray;
+}
+.addTask-input .fa-circle-plus{
+    color: #9b75b2;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.addTask-input input{
+    width: 80%;
+    outline: none;
+    border: none;
+    font-size:1rem;
+    font-weight:lighter;
+}
+.todolistContainer{
+    background-color: whitesmoke;
+}
+.list-container{
+    background-color:var(--white);
+    top: -2rem;
+    border-radius: 0.5rem;
+    position: relative;
+    height: 60vh;
+    width: 30vw;
+    box-shadow: 5px 5px 5px 0 gray;
+}
+.task-list{
+    text-align:center;
+    font-size: 1rem;
+}
+.task-list li{
+    list-style: none;
+    font-size: 1.25rem;
+    padding: 1rem 1rem 1rem 0rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+.task-list li::before{
+    content: '';
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    background-image: url(Images/circle.png);
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    left: 4rem;
+    top: 1.5rem;
+}
+.task-list li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.task-list li.checked::before{
+    background-image: url(Images/checkBtn_img.png);
+}
+.task-list li span{
+    position: absolute;
+    right:1rem;
+    top: 1.5rem;
+    height:1.25rem;
+    width: 1.25rem;
+    line-height: 1rem;
+    color: gray;
+    text-align: center;
+    border-radius: 50%;
+}
