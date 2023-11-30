@@ -1,0 +1,79 @@
+@import url('utility.css');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color:  #F0D1F2;
+}
+.container{
+    height:80vh ;
+    width: 30vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px 0 gray;
+    background-image: linear-gradient(40deg,#afaaff, #f7ccff);
+}
+.input-search{
+    height: 3rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    margin-bottom: 1.5rem;
+}
+.input-search input{
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    margin: 0.5rem;
+    outline: none;
+    border: none; 
+}
+/* .input-search span{
+    border: 2px solid #afaaff;
+    border-radius: 50%;
+    width: 2rem;
+    height: 3rem;
+    text-align: center;
+} */
+.input-search .fa-magnifying-glass{
+    color: #afaaff;
+    font-size: 1.5rem;
+}
+.input-search button{
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.weatherCondition-icon .temp{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: white;
+} 
+.weatherCondition-icon .icon img{
+    width: 150px;
+    height: 150px;
+}
+.weatherCondition-icon .icon span{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+.location-time{
+    margin-top: 1.5rem;
+    color: white;    
+}
+.location-time p{
+    font-size: 2rem;
+}
+.location-time span{
+    font-size: 1rem;
+}
