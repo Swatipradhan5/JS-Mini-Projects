@@ -1,0 +1,28 @@
+
+h1{
+    color: red;
+}
+div{
+    border: 2px solid black;
+    
+}
+.grandParent{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: slategray;
+}
+.parent{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: thistle;
+}
+.child{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color:bisque;
+}
