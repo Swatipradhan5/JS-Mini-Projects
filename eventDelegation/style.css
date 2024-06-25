@@ -1,0 +1,16 @@
+.parent{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3;
+    background-color: aliceblue;
+}
+.parent div{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    text-align: center;
+    
+}
