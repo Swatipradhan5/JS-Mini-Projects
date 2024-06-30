@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.star-container{
+    display: flex;
+    gap: 2;
+}
+.star{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.yellow{
+    color: gold;
+}
