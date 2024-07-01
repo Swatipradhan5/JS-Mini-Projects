@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttling Concept Implementation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Throttling Concept Implemented</h1>
+        <input type="text" placeholder="Type here">
+    </div>
+    <script>
+        let inputRef = document.querySelector("input");
+        let count =1;
+
+        let betterFuncThrottle = throttle(cb, 1000);
+
+        inputRef.addEventListener("keydown", betterFuncThrottle);
+
+        function cb(){
+            console.log("Network Call", count);
+            count++;
+        }
+
+        function throttle(cb, delay){
+            
+            let flag=true; //for running for the first time
+            return function(){
+
+                if(flag)
+                {
+                    cb();
+                    flag = false; //after first call, make it false to stop execution
+
+                    setTimeout(function(){
+
+                        flag = true;             //after specific delay make the flag true, so that the cb can execute again
+
+                    }, delay)
+                }
+                
+            }
+           
+        }
+    </script>
+</body>
+</html>
