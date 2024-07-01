@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+input{
+    width: 50vw;
+    height: 3rem;
+    text-align: center;
+}

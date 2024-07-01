@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debouncing Concept Implemented</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section class="container">
+        <h1>Debouncing Concept Implemented</h1>
+        <input type="text" placeholder="Type to see debouncing in effect">
+    </section>
+    <script>
+        let inputRef = document.querySelector("input");
+        let count =1;
+        let betterFuncDebounce = debounce(cb, 1000);
+
+        alert("Type with 1sec gap and see output in console, about how many network calls are made");
+
+        inputRef.addEventListener("keydown", betterFuncDebounce);
+
+        function cb(){
+            console.log("Network Call", count);
+            count++;
+        }
+
+        function debounce(cb, delay){
+
+            let timerId;
+            return function(){
+
+                clearTimeout(timerId); //it helps clearing the previous timer before starting a new timer.
+                timerId = setTimeout(cb, delay);
+            }
+        }
+
+    </script>
+</body>
+</html>
